@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.bootstrap.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+{% block content %}
+
+	<div class="main1">
+
+	<div class="logo"> <img src="{% static 'images/web.jpeg' %}" height="100%" width="100%" ></div>
+	</div>
+
+<center>
+ <pre>
+ 	<button style="float: right;"> <a href="{% url 'gmail' %}"> gmail login </a></button>
+ 	<p id="p1">
+	Name      :  <input type="textfield" name="name">
+
+	Rollno    :  <input type="textfield" name="rollno">
+	
+	Password  :  <input type="Password" name="pwd">
+
+<button style="background-color: red"><a href="{% url 'login' %}">login</a></button> 
+ <button style="background-color: red"><a href="{% url 'newuser' %}">new user</a></button> 
+ 
+ </pre>
+ </center>
+
+ {% endblock %}

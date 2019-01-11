@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Web Application</title>
+
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/custom.css' %}">
+</head>
+<body style="background-color:skyblue">
+<header>
+	<div class="main"><marquee><h1>Webllisto technoloies </h1></marquee></div>
+</header>
+{% block body %}
+{% endblock %}
+<footer>
+	<div class="main"><marquee><h1>Welcome</h1></marquee></div>
+</footer>	
+
+</body>
+</html>
+
